@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🪄Typing Wizard🪄</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style type="text/css">
+        body{
+            background-color: rgb(16, 16, 61);
+            background-image:url('downloadimage.png') ;
+        }
+    </style>
+</head>
+
+<body>
+     <center>
+        <h1> <strong>♥ Typing Club ♥</strong></h1></center>
+        <div id="mainbox" >
+            <BUTTON>Get Started</BUTTON>
+            <!-- <form name="webpage">
+                <select name="language" id="language">
+                <option value="#" disabled selected>English</option>
+                <option value="css.html" selected="selected">French</option>
+                <option href="#" value="JavaScript.html">German</option>
+                </select>
+                </form> -->
+          
+            <form name="Starting">
+                    <select name="Get Started" id="levels">
+                    <option href="#" value="C:\Users\Dell\Desktop\Js\getting_started-6-12-al.webm">Introduction</option>
+                    <option value="#" selected="selected">Easy</option>
+                    <option value="intermediate.html" selected="selected">Intermediate</option>
+                    <option href="#" value="coders.html">For coders</option>
+                    
+                    </select>
+                    </form>
+                    
+            <a href="login.html">LOGIN</a>
+        </div>
+        
+        <h2 style="text-align:center;">Learn Touch Typing For Free!</h2>
+
+        <script type ="text/javascript">
+            var urlMenu = document.getElementById('levels');
+            urlMenu.onchange = function()
+            {
+            var userOption = this.options[this.selectedIndex];
+            if (userOption.value != "nothing")
+            {
+            window.open(userOption.value, "English French German", "");
+            }
+            
+            }
+
+            
+            </script>
+            
+</body>
+</html>

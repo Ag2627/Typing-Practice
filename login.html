@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        *{
+            margin-top: 0px;
+        }
+        body{
+            background-image: url('downloadimage.png');
+            background-color: rgb(9, 11, 28);
+            background-repeat: no-repeat;
+            background-size: 800px 800px;
+            background-position: center;
+            background-size: cover;
+        }
+        .email {
+            font-size: 20px;
+        }
+
+        .email input {
+            width: 60%;
+            padding: 3px 20px;
+        }
+
+        .password {
+            font-size: 20px;
+        }
+
+        .password input {
+            width: 40%;
+            padding: 3px 20px;
+        }
+
+        .but {
+            border-radius: 4px;
+            height: 30px;
+            width: 60px;
+            background-color: rgb(3, 23, 41);
+            color: beige;
+            font-size: 15px;
+        }
+
+        .myerror {
+            color: red;
+        }
+        .modify{
+            border: 5px solid black;
+            border-radius: 23px;
+            padding: 48px 0px;
+            margin-left: 400px;
+            margin-right: 400px;
+            margin-top: 10px;
+            margin-bottom: 400px;
+            background-image: url('pho.jpg');
+            background-color: black;
+        }
+        .signup{
+            font-size: large;
+            color: rgb(13, 13, 1);
+        }
+        .sign{
+            color: rgb(16, 23, 215);
+            font-size: large;
+        }
+        .broom{
+            padding-left: 430px;
+        }
+        #ap{
+            color: beige;
+            padding-left: 420px;
+        }
+        #kp{
+            color: beige;
+            padding-left: 550px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="broom.gif" width="290px" height="270px" class="broom"></img>
+    <div id="ap">
+        <h1>Welcome back, wizard!</h1>
+    </div>
+    <div id="kp">
+        <h2>Login!</h2>
+    </div>
+    <center>
+        <form action="backend.php"> <!--form k andr ka data backend ko dega ye-->
+            <div class="modify">
+                <div class="email"> <!--division tag for division-->
+                    <p><strong>Username/Email :</strong> </p>
+                    <input type="email" name="myemail"><b><span class="myerror"></span></b>
+                </div>
+                <br>
+                <div class="password">
+                    <p><strong>password:</strong><button>forget password?</button></p>
+                    <input type="password" name="mypassword">
+
+                </div>
+                <br>
+                <div>
+                    <input class="but" type="submit" value="Login" name="mylogin">
+                </div>
+                <p class="signup">Don't have an account?
+                    <a href="http://127.0.0.1:5501/signup.html" class="sign">Sign up</a>
+                </p>
+            </div>
+        </form>
+    </center>
+</body>
+
+</html>

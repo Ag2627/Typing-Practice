@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up form</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+</head>
+
+<body>
+    <center>
+        <h1>"Attention, witches and wizards! Enroll now for magical adventures at Hogwarts!"</h1>
+        <h2>Sign Up</h2>
+        <form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="formdesign" id="name">
+            <p>First Name<span style="color:red">*</span></p>
+            <input type="text" name="fname" required><b><p class="formerror"> </p></b>
+        </div>
+        <div class="formdesign" id="lname">
+            <p>Last Name (optional)</p>
+            <input type="text" lname="flname">
+        </div>
+        <div class="formdesign" id="email">
+            <p>username/Email<span style="color:red">*</span></p>
+            <input type="email" name="femail" required><b><p class="formerror"> </p></b>
+        </div>
+
+        <div class="formdesign" id="pass">
+            <p>Password<span style="color:red">*</span></p>
+            <input type="password" name="fpass" required><b><p class="formerror"></p></b>
+        </div>
+
+        <div class="formdesign" id="cpass">
+            <p>Confirm Password<span style="color:red">*</span></p>
+            <input type="password" name="fcpass" required><b><p class="formerror"></p></b>
+        </div>
+        <div>
+            <input type="checkbox" name="agree" id="agree">I agree with terms of use and <a href="privacy.html">privacy policy</a>
+        </div>
+        <input class="but" type="submit" value="Submit">
+        <p>Already have an account?</p>
+            <a href="login.html">Login</a>
+    </form>
+   </center>
+
+</body>
+<script src="login.js"></script>
+
+</html>
